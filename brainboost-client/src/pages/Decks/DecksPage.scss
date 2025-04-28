@@ -1,0 +1,38 @@
+.decks-page {
+  padding: 20px;
+  min-height: calc(100vh - 64px); // Adjust based on navbar height
+  
+  .error-container {
+    max-width: 600px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 30px;
+    background-color: #f8d7da;
+    border-radius: 8px;
+    
+    h2 {
+      color: #721c24;
+      margin: 0 0 16px;
+    }
+    
+    p {
+      color: #721c24;
+      margin: 0 0 24px;
+    }
+    
+    button {
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 20px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      
+      &:hover {
+        background-color: #c82333;
+      }
+    }
+  }
+}

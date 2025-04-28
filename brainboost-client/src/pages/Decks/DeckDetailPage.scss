@@ -1,0 +1,76 @@
+.deck-detail-page {
+  padding: 20px;
+  min-height: calc(100vh - 64px); // Adjust based on navbar height
+  
+  .error-container {
+    max-width: 600px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 30px;
+    background-color: #f8d7da;
+    border-radius: 8px;
+    
+    h2 {
+      color: #721c24;
+      margin: 0 0 16px;
+    }
+    
+    p {
+      color: #721c24;
+      margin: 0 0 24px;
+    }
+    
+    button {
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 20px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      margin: 0 8px;
+      
+      &:hover {
+        background-color: #c82333;
+      }
+      
+      &.back-btn {
+        background-color: #6c757d;
+        
+        &:hover {
+          background-color: #5a6268;
+        }
+      }
+    }
+  }
+  
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 5px solid rgba(0, 123, 255, 0.1);
+      border-radius: 50%;
+      border-top-color: #007bff;
+      animation: spin 1s ease-in-out infinite;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      color: #6c757d;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
